@@ -38,6 +38,7 @@
     <nav aria-label="Primary">
       <ul class="nav__links">
         <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#requirements">Requirements</a></li>
         <li><a href="#support">Support</a></li>
       </ul>
@@ -129,6 +130,49 @@
     </div>
   </section>
 
+  <section id="practice" class="trust-strip">
+    <div class="container trust-strip__inner">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 15a9 9 0 0 1 18 0" />
+            <path d="M2 15h20" />
+            <path d="M12 15V8" />
+          </svg>
+        </div>
+        <div>
+          <h3>Built by a practicing engineer</h3>
+          <p>Designed and maintained by an engineer who runs it on real transmission, bridge, and drilled-shaft foundation work — not a classroom exercise.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 21V10l8-6 8 6v11" />
+            <path d="M9 21v-6h6v6" />
+          </svg>
+        </div>
+        <div>
+          <h3>Built for real geometries</h3>
+          <p>Exercised against messy multi-layer soil profiles and governing load combinations from live projects, not idealized textbook cases.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="4" width="12" height="17" rx="2" />
+            <path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" />
+            <path d="M9 12.5l2 2 4-4.5" />
+          </svg>
+        </div>
+        <div>
+          <h3>Built for the plan check</h3>
+          <p>Designed from day one to produce numbers you can defend to a plan checker, not just a rough back-of-envelope estimate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="features">
     <div class="container">
       <div class="section-head">
@@ -210,6 +254,196 @@
           <p>Run every combination in one pass — structural checks route to strength cases and soil/deflection checks route to service cases automatically, then the governing case is reported for each.</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase" class="alt-band">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" style="color:var(--accent-strong)">See it in action</p>
+        <h2>From load case to governing check.</h2>
+        <p>A sample of the plots and checks generated for every run.</p>
+        <p class="showcase-note"><em>Illustrative previews below — real product screenshots are coming as the site fills in.</em></p>
+      </div>
+
+      <div class="showcase-grid">
+
+        <figure class="shot-card">
+          <div class="shot-frame">
+            <div class="shot-frame__bar">
+              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
+            </div>
+            <div class="shot-frame__body">
+              <svg viewBox="0 0 400 250" role="img" aria-label="Sample shear and moment diagrams plotted against depth">
+                <line x1="70" y1="20" x2="70" y2="230" stroke="#94a3b8" stroke-width="1.2" />
+                <line x1="145" y1="20" x2="145" y2="230" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
+                <path d="M145,20 C205,55 225,95 190,130 C165,155 150,175 158,200 C162,213 150,222 145,228" fill="none" stroke="#14b8a6" stroke-width="2.2" />
+                <path d="M180,20 C160,60 130,95 155,130 C172,153 148,175 140,200 C137,210 142,220 145,228" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 4" />
+                <text x="188" y="34" fill="#14b8a6" font-family="ui-monospace,Menlo,monospace" font-size="13">M(z)</text>
+                <text x="150" y="46" fill="#f59e0b" font-family="ui-monospace,Menlo,monospace" font-size="13">V(z)</text>
+                <text x="55" y="234" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">depth</text>
+              </svg>
+            </div>
+          </div>
+          <figcaption>
+            <h3>Shear &amp; moment diagrams</h3>
+            <p>Full-length V(z) and M(z) profiles for every load case, plotted alongside the deflected shape.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot-card">
+          <div class="shot-frame">
+            <div class="shot-frame__bar">
+              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
+            </div>
+            <div class="shot-frame__body">
+              <svg viewBox="0 0 400 250" role="img" aria-label="Sample P-M interaction diagram with per-node demand-capacity points">
+                <path d="M200,25 C295,55 335,140 298,188 C258,236 142,236 102,188 C65,140 105,55 200,25 Z" fill="#14b8a6" opacity="0.08" stroke="#14b8a6" stroke-width="1.6" />
+                <line x1="200" y1="18" x2="200" y2="240" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
+                <line x1="55" y1="135" x2="345" y2="135" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
+                <circle cx="190" cy="110" r="4.5" fill="#22c55e" />
+                <circle cx="228" cy="150" r="4.5" fill="#22c55e" />
+                <circle cx="168" cy="175" r="4.5" fill="#22c55e" />
+                <circle cx="268" cy="168" r="4.5" fill="#f59e0b" />
+                <circle cx="300" cy="182" r="4.5" fill="#ef4444" />
+                <text x="204" y="30" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">P</text>
+                <text x="330" y="131" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">M</text>
+              </svg>
+            </div>
+          </div>
+          <figcaption>
+            <h3>Per-section DCR checking</h3>
+            <p>Every node's demand point is plotted against the P-M envelope — green, amber, or red at a glance.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot-card">
+          <div class="shot-frame">
+            <div class="shot-frame__bar">
+              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
+            </div>
+            <div class="shot-frame__body">
+              <svg viewBox="0 0 400 250" role="img" aria-label="Sample P-Delta illustration showing head offset and secondary moment">
+                <line x1="200" y1="15" x2="200" y2="230" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
+                <path d="M215,20 C225,70 232,120 218,170 C210,198 204,215 202,228" fill="none" stroke="#5eead4" stroke-width="2.2" />
+                <rect x="196" y="14" width="12" height="8" rx="2" fill="#16213a" stroke="#14b8a6" />
+                <line x1="200" y1="30" x2="215" y2="24" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="2 2" />
+                <text x="218" y="20" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="13">&#916;</text>
+                <line x1="215" y1="8" x2="215" y2="20" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowHead2)" />
+                <defs>
+                  <marker id="arrowHead2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                    <path d="M0,0 L10,5 L0,10 z" fill="#14b8a6" />
+                  </marker>
+                </defs>
+                <text x="222" y="10" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="13">P</text>
+                <path d="M232,120 A18,18 0 1 1 231,116" fill="none" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrowHead2)" />
+                <text x="236" y="150" fill="#f59e0b" font-family="ui-monospace,Menlo,monospace" font-size="13">P&middot;&#916;</text>
+              </svg>
+            </div>
+          </div>
+          <figcaption>
+            <h3>P-Delta analysis</h3>
+            <p>Head-to-tip offset under axial load is tracked as a depth-varying secondary moment, not a single scalar fudge factor.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot-card">
+          <div class="shot-frame">
+            <div class="shot-frame__bar">
+              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
+            </div>
+            <div class="shot-frame__body">
+              <svg viewBox="0 0 400 250" role="img" aria-label="Sample layered soil profile sketch with a water table overlay">
+                <rect x="140" y="20" width="140" height="60" fill="#C8E6A0" />
+                <rect x="140" y="80" width="140" height="55" fill="#F2D58A" />
+                <rect x="140" y="135" width="140" height="50" fill="#8FC17A" />
+                <rect x="140" y="185" width="140" height="45" fill="#C9A98C" />
+                <line x1="140" y1="80" x2="280" y2="80" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
+                <line x1="140" y1="135" x2="280" y2="135" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
+                <line x1="140" y1="185" x2="280" y2="185" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
+                <line x1="205" y1="10" x2="205" y2="230" stroke="#14b8a6" stroke-width="2" opacity="0.85" />
+                <line x1="130" y1="105" x2="290" y2="105" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="4 3" />
+                <path d="M130,105 l6,-6 l6,6 z" fill="#38bdf8" />
+                <text x="292" y="108" fill="#0369a1" font-family="ui-monospace,Menlo,monospace" font-size="11">WT</text>
+                <text x="92" y="24" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">0 ft</text>
+                <text x="92" y="139" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">12 ft</text>
+                <text x="92" y="234" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">22 ft</text>
+              </svg>
+            </div>
+          </div>
+          <figcaption>
+            <h3>Soil layer modeling</h3>
+            <p>A to-scale, color-coded strata sketch with a live water-table overlay — the same profile the solver sees.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" style="color:var(--accent-strong)">Pricing</p>
+        <h2>Free for practicing engineers. Forever.</h2>
+        <p>Not a trial. Not a countdown. The current version of LateralPile is free to download, free to run, and free to keep — for good.</p>
+      </div>
+
+      <div class="pledge-row">
+        <span class="tag-pill">Coupled axial + lateral solver</span>
+        <span class="tag-pill">ACI 318-25 section design</span>
+        <span class="tag-pill">Soil-mobilization checks</span>
+        <span class="tag-pill">Equilibrium audit</span>
+        <span class="tag-pill">Groundwater modeling</span>
+        <span class="tag-pill">Unlimited projects &amp; load cases</span>
+      </div>
+
+      <div class="pledge-callout">
+        <h3>Try it. Break it. Smoke-test it.</h3>
+        <p>
+          Run your next real project through it — a messy multi-layer profile, an awkward load
+          combination, whatever you'd normally reach for a p-y solver to handle. The more
+          practicing engineers push it against real geometries, the faster it gets better for
+          everyone. Found something it gets wrong? That's exactly what
+          <a href="#support">Report a Bug</a> is for.
+        </p>
+        <a class="btn btn--primary" href="https://stglatpileclick.blob.core.windows.net/clickonce/" target="_blank" rel="noopener">Download Free Beta</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap-pro" class="alt-band">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" style="color:var(--accent-strong)">What's next</p>
+        <h2>A Pro tier is coming. Free stays free.</h2>
+        <p>When Pro ships, everything in the free tier today stays free — forever. Pro will add capability for firms and teams that want more.</p>
+      </div>
+
+      <div class="tier-grid">
+        <div class="tier-card">
+          <div class="tier-badge tier-badge--free">Available now</div>
+          <h3>Free</h3>
+          <p>Everything a practicing engineer needs to run and defend a lateral pile analysis.</p>
+          <ul class="tier-list">
+            <li>Coupled axial + lateral solver</li>
+            <li>ACI 318-25 section design</li>
+            <li>Soil-mobilization &amp; equilibrium checks</li>
+            <li>Groundwater / effective-stress modeling</li>
+            <li>Unlimited projects, load cases, and re-runs</li>
+          </ul>
+        </div>
+        <div class="tier-card tier-card--pro">
+          <div class="tier-badge tier-badge--pro">Coming later</div>
+          <h3>Pro</h3>
+          <p>Planned capability for teams and firms — pricing and timeline still TBD.</p>
+          <ul class="tier-list">
+            <li>Branded PDF reports with your firm's logo</li>
+            <li>Custom, user-defined p-y soil curves</li>
+            <li>Integrated AI assistant for troubleshooting &amp; design-improvement suggestions</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
