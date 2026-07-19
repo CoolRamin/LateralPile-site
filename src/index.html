@@ -38,6 +38,7 @@
     <nav aria-label="Primary">
       <ul class="nav__links">
         <li><a href="#features">Features</a></li>
+        <li><a href="#specs">Specs</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#requirements">Requirements</a></li>
         <li><a href="#support">Support</a></li>
@@ -255,6 +256,120 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section id="specs">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" style="color:var(--accent-strong)">Under the hood</p>
+        <h2>Technical specifications.</h2>
+        <p>The methods, references, and data workflows behind every run — so you can verify the tool's reasoning, not just trust it.</p>
+      </div>
+
+      <div class="spec-grid">
+
+        <div class="spec-card">
+          <div class="support-kicker">Numerical method</div>
+          <h3>Layered p-y solver</h3>
+          <ul class="tier-list">
+            <li>Coupled axial + lateral formulation, Naik &amp; Peyrot<sup class="spec-ref">1</sup></li>
+            <li>Finite-difference discretization, banded LU factorization (LAPACK DGBSV-style — O(n), not O(n&sup3;))</li>
+            <li>Newton-Raphson iteration with Armijo backtracking line search for robust convergence</li>
+            <li>Outer variable-EI loop updates section stiffness from the Mander moment-curvature response each pass</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Performance</div>
+          <h3>Parallel load-case processing</h3>
+          <ul class="tier-list">
+            <li>Every enabled load combination solves concurrently, each to its own convergence</li>
+            <li>Each worker gets an independently cloned pile and solver workspace — no shared mutable state</li>
+            <li>Degree of parallelism is user-configurable; a serial mode is available for step-through debugging</li>
+            <li>Unlimited load combinations per project</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Soil models</div>
+          <h3>Six built-in p-y criteria</h3>
+          <ul class="tier-list">
+            <li>Soft clay — Matlock<sup class="spec-ref">2</sup></li>
+            <li>Stiff clay below the water table — Reese, Cox &amp; Koop<sup class="spec-ref">3</sup></li>
+            <li>Sand — Reese, Cox &amp; Koop<sup class="spec-ref">4</sup></li>
+            <li>API sand (offshore) — API RP&nbsp;2A-WSD<sup class="spec-ref">5</sup></li>
+            <li>Weak rock — Reese<sup class="spec-ref">6</sup></li>
+            <li>Linear elastic (user-defined modulus)</li>
+            <li>Georgiadis<sup class="spec-ref">7</sup> equivalent-depth correction applied across layered profiles</li>
+            <li>Optional groundwater / effective-stress overlay — automatic buoyant unit weights below the water table</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Structural design</div>
+          <h3>ACI 318-25 section check</h3>
+          <ul class="tier-list">
+            <li>Mander-confined fiber section, per ACI CODE-318-25<sup class="spec-ref">9</sup></li>
+            <li>Full P-M interaction diagram and shear check, per node, per load case</li>
+            <li>Confinement model per Mander, Priestley &amp; Park<sup class="spec-ref">8</sup> drives the variable-EI feedback loop</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Stability &amp; equilibrium</div>
+          <h3>Independent verification audit</h3>
+          <ul class="tier-list">
+            <li>A separate post-solve check re-integrates every converged solution — it does not reuse solver internals, so a sign or discretization bug can't hide from it</li>
+            <li>Confirms lateral force balance, lateral moment balance (including the P-Delta secondary moment), and axial force balance</li>
+            <li>Flags physical-sanity issues: numerical blow-up, deflection exceeding the pile diameter, or degenerate section stiffness</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Load cases</div>
+          <h3>Service &amp; LRFD routing</h3>
+          <ul class="tier-list">
+            <li>Service (unfactored) vs. LRFD/strength combinations are tagged per case</li>
+            <li>Section checks route to strength cases; soil-mobilization and deflection checks route to service cases — automatically</li>
+            <li>Per-case dead-load factor keeps self-weight consistent with the combination (e.g. 0.9D for an uplift check)</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Data workflow</div>
+          <h3>Import, export, and reporting</h3>
+          <ul class="tier-list">
+            <li>Native JSON project files (<code>.lpcj</code>)</li>
+            <li>Excel-compatible copy/paste for soil layers and load cases — bulk-edit in Excel, paste straight back in, no file conversion needed</li>
+            <li>Per-diagram CSV export (right-click any plot) for shear, moment, deflection, DCR, and soil-mobilization data</li>
+            <li>A full numbered governing-design report, ready to paste into a submittal</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <div class="support-kicker">Cloud sync</div>
+          <h3>Optional, never required</h3>
+          <ul class="tier-list">
+            <li>Local <code>.lpcj</code> files are the default — the tool works fully offline, forever, without an account</li>
+            <li>Sign in once (optional) to save projects to the cloud and pick them up on another machine</li>
+            <li>Nothing about the free tier depends on signing in</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <ol class="spec-refs">
+        <li>Naik, T.R. &amp; Peyrot, A.H. (1976). "Analysis and Design of Laterally Loaded Piles and Caissons in a Layered Soil System," ASCE National Structural Engineering Conference.</li>
+        <li>Matlock, H. (1970). "Correlations for design of laterally loaded piles in soft clay," 2nd Offshore Technology Conference, Paper 1204.</li>
+        <li>Reese, L.C., Cox, W.R. &amp; Koop, F.D. (1975). "Field testing and analysis of laterally loaded piles in stiff clay," 7th OTC, Paper 2312.</li>
+        <li>Reese, L.C., Cox, W.R. &amp; Koop, F.D. (1974). "Analysis of laterally loaded piles in sand," 6th OTC, Paper 2080.</li>
+        <li>API (2010). <em>RP 2A-WSD, Recommended Practice for Planning, Designing and Constructing Fixed Offshore Platforms</em>, 22nd Ed., American Petroleum Institute.</li>
+        <li>Reese, L.C. (1997). "Analysis of laterally loaded piles in weak rock," <em>J. Geotech. &amp; Geoenv. Engrg.</em>, ASCE, 123(11), pp. 1010-1017.</li>
+        <li>Georgiadis, M. (1983). "Development of p-y curves for layered soils," Proc. Geotech. Practice in Offshore Engineering, ASCE.</li>
+        <li>Mander, J.B., Priestley, M.J.N. &amp; Park, R. (1988). "Theoretical stress-strain model for confined concrete," <em>J. Struct. Engrg.</em>, ASCE, 114(8), pp. 1804-1826.</li>
+        <li>ACI Committee 318 (2025). <em>ACI CODE-318-25 Building Code Requirements for Structural Concrete and Commentary</em>, American Concrete Institute.</li>
+      </ol>
     </div>
   </section>
 
