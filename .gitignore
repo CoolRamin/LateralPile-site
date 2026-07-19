@@ -1,0 +1,9 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+
+# In case build tooling is ever added later
+node_modules/
+dist/
+*.log
