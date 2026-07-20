@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a problem with LateralPile
+about: Report a problem with RPile
 title: '[BUG] '
 labels: bug
 assignees: ''

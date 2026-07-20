@@ -1,7 +1,7 @@
 # Contributing
 
-This repository holds only the LateralPile **marketing website**. It does not accept
-contributions to the LateralPile application itself (that source lives in a separate,
+This repository holds only the RPile **marketing website**. It does not accept
+contributions to the RPile application itself (that source lives in a separate,
 private repository).
 
 ## Typo fixes and small edits
@@ -15,6 +15,6 @@ it doesn't fit the site's direction.
 
 ## Reporting application bugs
 
-This repo's Issues are also the public bug tracker for the LateralPile **application**. Use
+This repo's Issues are also the public bug tracker for the RPile **application**. Use
 the "Bug report" or "Feature request" template — no code access to the app is needed to file
 one.

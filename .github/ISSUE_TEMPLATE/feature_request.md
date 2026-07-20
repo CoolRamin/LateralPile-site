@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest a new capability for LateralPile
+about: Suggest a new capability for RPile
 title: '[FEATURE] '
 labels: enhancement
 assignees: ''

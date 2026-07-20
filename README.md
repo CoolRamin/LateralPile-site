@@ -1,7 +1,7 @@
-# LateralPile Marketing Website
+# RPile Marketing Website
 
 Public source for the landing page at **https://www.ramisoftsolutions.com** (domain/DNS
-cutover pending — see Deployment status below), the marketing site for the LateralPile
+cutover pending — see Deployment status below), the marketing site for the RPile
 Windows desktop application.
 
 ## Scope of this repository
@@ -10,14 +10,14 @@ This repository contains **only the static marketing website** (`src/`): HTML, C
 inline SVG assets, plus the GitHub configuration that makes this repo's Issues usable as a
 public support channel.
 
-**It does not contain, and will never contain, any LateralPile application source code.**
+**It does not contain, and will never contain, any RPile application source code.**
 The WPF desktop app (analysis engine, UI, API) is developed in a separate, private
 repository. Nothing in this repo requires or exposes that source — no engine code, no
 project files, no Azure/cloud configuration, no build artifacts from the app.
 
-## About LateralPile
+## About RPile
 
-LateralPile is a desktop tool for coupled axial + lateral analysis of laterally loaded piles
+RPile is a desktop tool for coupled axial + lateral analysis of laterally loaded piles
 and drilled caissons in layered soil (Naik-Peyrot p-y method), with an ACI 318-25 capacity
 check on a Mander-confined section and independent soil-mobilization and equilibrium audits.
 Download the free public beta from the site above.
@@ -50,5 +50,5 @@ Small typo fixes and copy improvements are welcome via pull request — see
 
 ## License
 
-MIT (see [LICENSE](LICENSE)). This covers the **website content only**. The LateralPile
+MIT (see [LICENSE](LICENSE)). This covers the **website content only**. The RPile
 application itself is separate, closed-source software under different terms.
