@@ -111,6 +111,41 @@ button:focus-visible {
   border-radius: 4px;
 }
 
+/* ---------- Announcement bar ---------- */
+
+.announce-bar {
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+  color: var(--accent-ink);
+}
+
+.announce-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 10px;
+  padding: 10px 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.announce-bar__text {
+  min-width: 0;
+}
+
+.announce-bar a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .announce-bar__inner {
+    font-size: 12.5px;
+  }
+}
+
 /* ---------- Nav ---------- */
 
 .nav {
@@ -456,6 +491,18 @@ section {
   font-size: 14.5px;
   color: var(--ink-soft);
   margin: 0;
+}
+
+/* ---------- AI assistant grid (2-up variant of .feature-grid) ---------- */
+
+.ai-feature-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 640px) {
+  .ai-feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- Requirements ---------- */
@@ -872,13 +919,13 @@ footer {
 
 .tier-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
   .tier-grid {
     grid-template-columns: 1fr;
   }
@@ -890,6 +937,12 @@ footer {
   padding: 28px;
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
+}
+
+.tier-card--preview {
+  border-color: color-mix(in srgb, var(--amber) 45%, var(--border));
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04),
+    0 20px 40px -16px color-mix(in srgb, var(--amber) 35%, transparent);
 }
 
 .tier-card--pro {
@@ -910,6 +963,11 @@ footer {
 .tier-badge--free {
   background: color-mix(in srgb, var(--free) 16%, transparent);
   color: var(--free-ink);
+}
+
+.tier-badge--preview {
+  background: color-mix(in srgb, var(--amber) 20%, transparent);
+  color: var(--amber-ink);
 }
 
 .tier-badge--pro {
