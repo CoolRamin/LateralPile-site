@@ -589,6 +589,21 @@ section {
   line-height: 1.6;
 }
 
+.callout--privacy {
+  margin-top: 40px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--card-bg));
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+  color: var(--ink);
+}
+
+.callout--privacy .callout__icon {
+  color: var(--accent-strong);
+}
+
+.callout--privacy p {
+  color: var(--ink-soft);
+}
+
 /* ---------- Support ---------- */
 
 .support-grid {
