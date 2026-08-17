@@ -152,7 +152,7 @@
         </div>
         <div>
           <h3>Built by a practicing engineer</h3>
-          <p>Designed and maintained by an engineer who runs it on real transmission, bridge, and drilled-shaft foundation work — not a classroom exercise.</p>
+          <p>Designed and maintained by an engineer who runs it on real transmission, refinery, and drilled-shaft foundation work — not a classroom exercise.</p>
         </div>
       </div>
       <div class="trust-item">
@@ -284,6 +284,7 @@
           <ul class="tier-list">
             <li>Coupled axial + lateral formulation, Naik &amp; Peyrot<sup class="spec-ref">1</sup></li>
             <li>Finite-difference discretization, banded LU factorization (LAPACK DGBSV-style — O(n), not O(n&sup3;))</li>
+            <li>Uniform or Graded (non-uniform) meshing — element spacing auto-sized to the head condition, refined near the surface where curvature is sharpest</li>
             <li>Newton-Raphson iteration with Armijo backtracking line search for robust convergence</li>
             <li>Outer variable-EI loop updates section stiffness from the Mander moment-curvature response each pass</li>
           </ul>
@@ -302,7 +303,7 @@
 
         <div class="spec-card">
           <div class="support-kicker">Soil models</div>
-          <h3>Seven built-in p-y criteria</h3>
+          <h3>Eight built-in p-y criteria</h3>
           <ul class="tier-list">
             <li>Soft clay — Matlock<sup class="spec-ref">2</sup></li>
             <li>Stiff clay below the water table — Reese, Cox &amp; Koop<sup class="spec-ref">3</sup></li>
@@ -310,6 +311,7 @@
             <li>Sand — Reese, Cox &amp; Koop<sup class="spec-ref">5</sup></li>
             <li>API sand (offshore) — API RP&nbsp;2A-WSD<sup class="spec-ref">6</sup></li>
             <li>Weak rock — Reese<sup class="spec-ref">7</sup></li>
+            <li>Strong rock (vuggy limestone) — FHWA-NHI-10-016<sup class="spec-ref">11</sup></li>
             <li>Linear elastic (user-defined modulus)</li>
             <li>Georgiadis<sup class="spec-ref">8</sup> equivalent-depth correction applied across layered profiles</li>
             <li>Optional groundwater / effective-stress overlay — automatic buoyant unit weights below the water table</li>
@@ -352,7 +354,7 @@
           <ul class="tier-list">
             <li>Native JSON project files (<code>.lpcj</code>)</li>
             <li>Excel-compatible copy/paste for soil layers and load cases — bulk-edit in Excel, paste straight back in, no file conversion needed</li>
-            <li>Per-diagram CSV export (right-click any plot) for shear, moment, deflection, DCR, and soil-mobilization data</li>
+            <li>Right-click any chart to copy it as an image or copy its underlying data Excel-ready — standardized across every plot in the app</li>
             <li>A full numbered governing-design report, ready to paste into a submittal</li>
           </ul>
         </div>
@@ -380,6 +382,7 @@
         <li>Georgiadis, M. (1983). "Development of p-y curves for layered soils," Proc. Geotech. Practice in Offshore Engineering, ASCE.</li>
         <li>Mander, J.B., Priestley, M.J.N. &amp; Park, R. (1988). "Theoretical stress-strain model for confined concrete," <em>J. Struct. Engrg.</em>, ASCE, 114(8), pp. 1804-1826.</li>
         <li>ACI Committee 318 (2025). <em>ACI CODE-318-25 Building Code Requirements for Structural Concrete and Commentary</em>, American Concrete Institute.</li>
+        <li>FHWA (2010). <em>Drilled Shafts: Construction Procedures and LRFD Design Methods</em>, FHWA-NHI-10-016 (Brown, Turner &amp; Castelli).</li>
       </ol>
     </div>
   </section>
@@ -562,6 +565,17 @@
           <p>A native desktop chat window that streams replies token-by-token with live Markdown formatting and status updates while it works — open it alongside the main window, not instead of it.</p>
         </div>
 
+        <div class="feature-card feature-card--wide">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+          </div>
+          <h3>Finds projects across your whole cloud library</h3>
+          <p>Ask it to pull up every project within a radius of a site, filter by pile diameter or other properties, or search your Scope-of-Work text by meaning, not just keyword — all from the same chat window.</p>
+        </div>
+
       </div>
 
       <div class="callout callout--privacy" role="note">
@@ -632,6 +646,10 @@
             <li>Soil-mobilization &amp; equilibrium checks</li>
             <li>Groundwater / effective-stress modeling</li>
             <li>Unlimited projects, load cases, and re-runs</li>
+            <li>Client &amp; multi-pile-analysis projects — every pile at a site, in one place</li>
+            <li>Public soil-model library — browse models shared by other engineers, sorted by distance to your site</li>
+            <li>Cloud project version history — every save is a recoverable version</li>
+            <li>Recycle bin for deleted cloud projects</li>
           </ul>
         </div>
         <div class="tier-card tier-card--preview">
@@ -643,15 +661,20 @@
             <li>Branded PDF reports with your firm's logo</li>
             <li>Custom, user-defined p-y soil curves</li>
             <li>AI assistant — grounded Q&amp;A over your live project, results, and pushover output</li>
+            <li>Interactive map view — browse your cloud projects and soil-model library by location</li>
+            <li>AI-powered cloud project search — radius, property, and semantic search, right from the chat</li>
+            <li>Organizations — shared team projects across your firm, with checkout locking</li>
           </ul>
         </div>
         <div class="tier-card tier-card--pro">
-          <div class="tier-badge tier-badge--pro">Coming later</div>
+          <div class="tier-badge tier-badge--pro">Coming soon &middot; in testing</div>
           <h3>Pro</h3>
-          <p>Once the preview ends, Pro becomes a paid tier for teams and firms — pricing and timeline still TBD. Also in active development:</p>
+          <p>Once the preview ends, Pro becomes a paid tier for teams and firms — pricing and timeline still TBD. Already built and in active testing:</p>
           <ul class="tier-list">
-            <li>AI-assisted what-if / sensitivity &amp; optimization analysis</li>
-            <li>AI-assisted, consent-gated project mutation for troubleshooting</li>
+            <li>Seismic deep-foundation detailing — jurisdiction-aware reinforcement requirements, AI-researched from official sources and engineer-confirmed</li>
+            <li>Parametric study — automated sensitivity sweeps to find the optimal pile geometry</li>
+            <li>Probabilistic / Monte Carlo analysis — fragility curves and reliability statistics</li>
+            <li>AI-assisted what-if investigations — the assistant proposes a fix and solver-verifies it before telling you</li>
           </ul>
         </div>
       </div>
@@ -749,10 +772,48 @@
     <span>&copy; 2026 RamiSoft Solutions</span>
     <ul class="footer__links">
       <li><a href="mailto:admin@ramisoftsolutions.com">admin@ramisoftsolutions.com</a></li>
-      <li><a href="https://github.com/CoolRamin/LateralPile-site" target="_blank" rel="noopener">GitHub</a></li>
+      <li>
+        <a class="footer__icon" href="https://github.com/CoolRamin/LateralPile-site" target="_blank" rel="noopener" aria-label="RPile on GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="footer__icon" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamiSoft Solutions on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+      </li>
     </ul>
   </div>
 </footer>
+
+<button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5" />
+    <path d="M6 11l6-6 6 6" />
+  </svg>
+</button>
+
+<script>
+(function () {
+  var btn = document.getElementById('scrollTopBtn');
+  var onScroll = function () {
+    if (window.scrollY > 480) {
+      btn.classList.add('scroll-top--visible');
+    } else {
+      btn.classList.remove('scroll-top--visible');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  onScroll();
+})();
+</script>
 
 </body>
 </html>
