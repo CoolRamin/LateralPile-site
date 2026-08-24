@@ -290,9 +290,10 @@
           </ul>
         </div>
 
-        <div class="spec-card">
+        <div class="spec-card spec-card--stat">
           <div class="support-kicker">Performance</div>
-          <h3>Parallel load-case processing</h3>
+          <h3>8.5&nbsp;s &rarr; 15&ndash;25&nbsp;ms warm</h3>
+          <p class="spec-stat-detail">A typical multi-case analysis, after a pass dedicated entirely to solver throughput &mdash; same solver, same results, just faster.</p>
           <ul class="tier-list">
             <li>Every enabled load combination solves concurrently, each to its own convergence</li>
             <li>Each worker gets an independently cloned pile and solver workspace — no shared mutable state</li>
@@ -308,7 +309,7 @@
             <li>Soft clay — Matlock<sup class="spec-ref">2</sup></li>
             <li>Stiff clay below the water table — Reese, Cox &amp; Koop<sup class="spec-ref">3</sup></li>
             <li>Stiff clay above the water table (dry) — Welch &amp; Reese<sup class="spec-ref">4</sup></li>
-            <li>Sand — Reese, Cox &amp; Koop<sup class="spec-ref">5</sup></li>
+            <li>Sand — Reese, Cox &amp; Koop<sup class="spec-ref">5</sup>, full piecewise curve for the most accurate near-ultimate behavior</li>
             <li>API sand (offshore) — API RP&nbsp;2A-WSD<sup class="spec-ref">6</sup></li>
             <li>Weak rock — Reese<sup class="spec-ref">7</sup></li>
             <li>Strong rock (vuggy limestone) — FHWA-NHI-10-016<sup class="spec-ref">11</sup></li>
@@ -319,12 +320,25 @@
         </div>
 
         <div class="spec-card">
+          <div class="support-kicker">Axial capacity</div>
+          <h3>FHWA-NHI-10-016 skin friction &amp; end bearing</h3>
+          <ul class="tier-list">
+            <li>Clay, sand, and rock skin-friction and end-bearing formulas aligned to FHWA-NHI-10-016<sup class="spec-ref">11</sup></li>
+            <li>N60-based sand capacity — enter SPT blow count per layer for beta-method skin friction and a correlated end-bearing capacity</li>
+            <li>Per-layer rock side-resistance method — Normal, degraded/caving socket, or Colorado DOT claystone, chosen per layer</li>
+            <li>Per-geomaterial ASD/LRFD resistance factors — distinct values by soil type and by compression vs. uplift, with a one-click FHWA preset</li>
+            <li>Solved from the same coupled axial + lateral run — no separate hand calc to reconcile</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
           <div class="support-kicker">Structural design</div>
           <h3>ACI 318-25 section check</h3>
           <ul class="tier-list">
             <li>Mander-confined fiber section, per ACI CODE-318-25<sup class="spec-ref">10</sup></li>
             <li>Full P-M interaction diagram and shear check, per node, per load case</li>
             <li>Confinement model per Mander, Priestley &amp; Park<sup class="spec-ref">9</sup> drives the variable-EI feedback loop</li>
+            <li>Reinforcement input by bar count/size or by target steel ratio (&rho;<sub>g</sub>%) — your choice</li>
           </ul>
         </div>
 
@@ -565,6 +579,20 @@
           <p>A native desktop chat window that streams replies token-by-token with live Markdown formatting and status updates while it works — open it alongside the main window, not instead of it.</p>
         </div>
 
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="3" width="12" height="17" rx="1.5" />
+              <line x1="7" y1="7" x2="13" y2="7" />
+              <line x1="7" y1="10.5" x2="13" y2="10.5" />
+              <circle cx="17" cy="17" r="3.2" />
+              <line x1="19.3" y1="19.3" x2="21.5" y2="21.5" />
+            </svg>
+          </div>
+          <h3>Grounded in published literature</h3>
+          <p>Search the actual papers your analysis methods are built on — Naik &amp; Peyrot, Matlock, Reese, Mander, and more — and click straight through to the cited page of the source.</p>
+        </div>
+
         <div class="feature-card feature-card--wide">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -647,6 +675,7 @@
             <li>Groundwater / effective-stress modeling</li>
             <li>Unlimited projects, load cases, and re-runs</li>
             <li>Client &amp; multi-pile-analysis projects — every pile at a site, in one place</li>
+            <li>Per-pile coordinates on a live map — pick OpenStreetMap or Esri imagery</li>
             <li>Public soil-model library — browse models shared by other engineers, sorted by distance to your site</li>
             <li>Cloud project version history — every save is a recoverable version</li>
             <li>Recycle bin for deleted cloud projects</li>
@@ -661,7 +690,9 @@
             <li>Branded PDF reports with your firm's logo</li>
             <li>Custom, user-defined p-y soil curves</li>
             <li>AI assistant — grounded Q&amp;A over your live project, results, and pushover output</li>
+            <li>Reference document search — ground the AI assistant in the actual published papers behind the methods, with clickable citations</li>
             <li>Interactive map view — browse your cloud projects and soil-model library by location</li>
+            <li>Site-boundary attachments — a shapefile, KML/KMZ, or one you sketch by hand, right on the map</li>
             <li>AI-powered cloud project search — radius, property, and semantic search, right from the chat</li>
             <li>Organizations — shared team projects across your firm, with checkout locking</li>
           </ul>
@@ -701,7 +732,7 @@
         </div>
         <div class="req-item">
           <div class="req-label">Disk space</div>
-          <div class="req-value">~150 MB</div>
+          <div class="req-value">~350 MB</div>
           <div class="req-detail">Plus runtime, if not already installed</div>
         </div>
         <div class="req-item">
@@ -769,7 +800,7 @@
 
 <footer>
   <div class="container footer__inner">
-    <span>&copy; 2026 RamiSoft Solutions</span>
+    <span>&copy; 2026 RamisoftSolutions &middot; Built and maintained in California, United States</span>
     <ul class="footer__links">
       <li><a href="mailto:admin@ramisoftsolutions.com">admin@ramisoftsolutions.com</a></li>
       <li>
@@ -780,7 +811,7 @@
         </a>
       </li>
       <li>
-        <a class="footer__icon" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamiSoft Solutions on LinkedIn" title="LinkedIn">
+        <a class="footer__icon" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamisoftSolutions on LinkedIn" title="LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
           </svg>

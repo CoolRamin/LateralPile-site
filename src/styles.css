@@ -795,6 +795,24 @@ footer {
   color: var(--ink-soft);
 }
 
+.spec-card--stat {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--accent) 6%, var(--card-bg));
+}
+
+.spec-card--stat h3 {
+  font-size: 26px;
+  color: var(--accent-strong);
+  line-height: 1.25;
+}
+
+.spec-stat-detail {
+  margin: 0 0 18px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
 .spec-ref {
   color: var(--accent-strong);
   font-weight: 700;
