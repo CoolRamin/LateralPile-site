@@ -1,20 +1,15 @@
 # Contributing
 
-This repository holds only the RPile **marketing website**. It does not accept
-contributions to the RPile application itself (that source lives in a separate,
-private repository).
+This repository holds only the RamisoftSolutions company **website**. It contains no program source code.
 
-## Typo fixes and small edits
+## Ideas for new software
 
-Feel free to open a pull request against `src/`. It'll usually be reviewed within a few days.
+Open an issue with the "Idea for new software" form. A bug or a feature request for FoundaTrix Studio or PileAxis
+belongs in that program's own tracker:
+[FoundaTrix-site issues](https://github.com/CoolRamin/FoundaTrix-site/issues) and
+[PileAxis-site issues](https://github.com/CoolRamin/PileAxis-site/issues).
 
-## Larger changes
+## Corrections to the site
 
-Please open an issue first to discuss what you'd like to change, so effort isn't wasted if
-it doesn't fit the site's direction.
-
-## Reporting application bugs
-
-This repo's Issues are also the public bug tracker for the RPile **application**. Use
-the "Bug report" or "Feature request" template — no code access to the app is needed to file
-one.
+Typo fixes and small corrections are welcome as pull requests against `src/`. For anything larger, open an issue first
+so we can agree on it before you spend time on it.

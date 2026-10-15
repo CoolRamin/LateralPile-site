@@ -1,54 +1,45 @@
-# RPile Marketing Website
+# RamisoftSolutions website
 
-Public source for the landing page at **https://www.ramisoftsolutions.com** (domain/DNS
-cutover pending — see Deployment status below), the marketing site for the RPile
-Windows desktop application.
+Source of **https://www.ramisoftsolutions.com**, the company site of RamisoftSolutions, developer of specialized
+structural engineering software. It introduces the company and its two products at a high level and sends visitors
+to each product's own website:
 
-## Scope of this repository
+| Product | Website | Its site's repository (and public issue tracker) |
+|---|---|---|
+| FoundaTrix Studio, analysis and design of rigid foundations | https://www.foundatrix.com | [CoolRamin/FoundaTrix-site](https://github.com/CoolRamin/FoundaTrix-site) |
+| PileAxis, lateral and axial analysis of piles and drilled shafts | https://www.pileaxis.com | [CoolRamin/PileAxis-site](https://github.com/CoolRamin/PileAxis-site) |
 
-This repository contains **only the static marketing website** (`src/`): HTML, CSS, and
-inline SVG assets, plus the GitHub configuration that makes this repo's Issues usable as a
-public support channel.
+Until 2026-10-15 this repository was the one-page site of RPile, the program now called PileAxis, and briefly held its
+privacy policy and terms of use. Both moved to www.pileaxis.com; `/privacy` and `/terms` here redirect to the
+company page's list of each product's policies, and `/rpile` and `/rfoundation` to the product sites.
 
-**It does not contain, and will never contain, any RPile application source code.**
-The WPF desktop app (analysis engine, UI, API) is developed in a separate, private
-repository. Nothing in this repo requires or exposes that source — no engine code, no
-project files, no Azure/cloud configuration, no build artifacts from the app.
+## What is here
 
-## About RPile
+Website code only, nothing from the programs. A static site with no build step:
 
-RPile is a desktop tool for coupled axial + lateral analysis of laterally loaded piles
-and drilled caissons in layered soil (Naik-Peyrot p-y method), with an ACI 318-25 capacity
-check on a Mander-confined section and independent soil-mobilization and equilibrium audits.
-Download the free public beta from the site above.
+- `src/index.html`, the one page: products, approach, standards, ideas, contact and the legal list; `src/404.html`.
+- `src/styles.css` and `src/site.js`: FoundaTrix Studio's site's design system, shared with the PileAxis site so the
+  three read as one family, with a short "RamisoftSolutions additions" block at the end of the stylesheet. A change to
+  the shared part belongs in all three repositories.
+- `src/images/`: the company mark and the two product marks (the product marks are copies of each product site's own).
+- `src/staticwebapp.config.json`: the strict Content Security Policy (no inline styles or scripts), the 404 page and the
+  redirects above.
 
-## Reporting bugs and requesting features
+Every `href` and `src` is root-absolute (`/styles.css`). To preview, serve `src/` with any static file server (a
+`file://` page cannot resolve root-absolute paths).
 
-- **Bug reports and feature requests (public):** use this repo's
-  [Issues](../../issues) — templates are provided for both.
-- **Private questions** (confidential project data, plan-check questions, licensing):
-  email `admin@ramisoftsolutions.com`.
-- **In-app bug reports:** the app's `Help > Report a Bug` command pre-fills an email with
-  your case number and current project file attached.
+## Ideas for new software
 
-## Local development
-
-There is no build step. Open `src/index.html` directly in a browser, or serve the `src/`
-folder with any static file server, to preview changes.
+This repository's Issues collect ideas for **new** software, through the "Idea for new software" form. A bug or a
+feature request for an existing program goes to that program's own tracker (the form chooser links both). Write to
+admin@ramisoftsolutions.com for anything private.
 
 ## Deployment
 
-Hosted on **Azure Static Web Apps** (Free tier), deployed automatically from this repo's
-`main` branch via GitHub Actions. `staticwebapp.config.json` configures the SPA fallback and
-baseline security headers. Custom domain and DNS cutover to `www.ramisoftsolutions.com` are a
-separate, later step — see this repository's issues/roadmap for status.
-
-## Contributing
-
-Small typo fixes and copy improvements are welcome via pull request — see
-[CONTRIBUTING.md](CONTRIBUTING.md).
+Azure Static Web App `swa-lateralpile-site` (resource group `rg-lateralpile`, Free tier), deployed by the workflow in
+`.github/workflows/` on every push to `main`. A push deploys: push only what should be live.
 
 ## License
 
-MIT (see [LICENSE](LICENSE)). This covers the **website content only**. The RPile
-application itself is separate, closed-source software under different terms.
+MIT (see [LICENSE](LICENSE)), covering the website content only. The programs are separate, closed-source software
+under their own terms.

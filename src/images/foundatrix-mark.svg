@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="FoundaTrix Studio">
+  <title>FoundaTrix Studio</title>
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A1E36"/>
+      <stop offset="1" stop-color="#07080F"/>
+    </linearGradient>
+    <clipPath id="plateClip">
+      <rect width="256" height="256" rx="52"/>
+    </clipPath>
+    <radialGradient id="gridFade" gradientUnits="userSpaceOnUse" cx="128" cy="170" r="140"
+        gradientTransform="translate(128 170) scale(1 0.642857) translate(-128 -170)">
+      <stop offset="0.35" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask">
+      <rect width="256" height="256" fill="url(#gridFade)"/>
+    </mask>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="url(#plate)"/>
+  <g clip-path="url(#plateClip)" mask="url(#gridMask)">
+    <path fill="none" stroke="#39D5C9" stroke-width="1.6" opacity="0.3"
+      d="M128,51 L315.06,159 M128,51 L-59.06,159 M104.62,64.5 L291.68,172.5 M151.38,64.5 L-35.68,172.5 M81.23,78 L268.3,186 M174.77,78 L-12.3,186 M57.85,91.5 L244.91,199.5 M198.15,91.5 L11.09,199.5 M34.47,105 L221.53,213 M221.53,105 L34.47,213 M11.09,118.5 L198.15,226.5 M244.91,118.5 L57.85,226.5 M-12.3,132 L174.77,240 M268.3,132 L81.23,240 M-35.68,145.5 L151.38,253.5 M291.68,145.5 L104.62,253.5 M-59.06,159 L128,267 M315.06,159 L128,267"/>
+  </g>
+  <path fill="#B8A9F6" d="M34.47,159 L128,213 L128,194.64 L34.47,140.64 Z"/>
+  <path fill="#8F7EE6" d="M221.53,159 L128,213 L128,194.64 L221.53,140.64 Z"/>
+  <path fill="#E4DAFF" d="M128,86.64 L221.53,140.64 L128,194.64 L34.47,140.64 Z"/>
+  <path fill="#6CCBC5" d="M94.33,140.64 L128,160.08 L128,113.64 L94.33,94.2 Z"/>
+  <path fill="#3B9F9A" d="M161.67,140.64 L128,160.08 L128,113.64 L161.67,94.2 Z"/>
+  <path fill="#AFEDE9" d="M128,74.76 L161.67,94.2 L128,113.64 L94.33,94.2 Z"/>
+  <path fill="#F0388F" d="M122.5,41.28 L133.5,41.28 L133.5,62.8 L145,62.8 L128,88.8 L111,62.8 L122.5,62.8 Z"/>
+</svg>

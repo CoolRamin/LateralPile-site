@@ -1,15 +1,27 @@
 {
   "trailingSlash": "auto",
+  "routes": [
+    { "route": "/privacy", "redirect": "/#legal", "statusCode": 301 },
+    { "route": "/privacy/*", "redirect": "/#legal", "statusCode": 301 },
+    { "route": "/terms", "redirect": "/#legal", "statusCode": 301 },
+    { "route": "/terms/*", "redirect": "/#legal", "statusCode": 301 },
+    { "route": "/rpile", "redirect": "https://www.pileaxis.com/", "statusCode": 301 },
+    { "route": "/rpile/*", "redirect": "https://www.pileaxis.com/", "statusCode": 301 },
+    { "route": "/rfoundation", "redirect": "https://www.foundatrix.com/", "statusCode": 301 },
+    { "route": "/rfoundation/*", "redirect": "https://www.foundatrix.com/", "statusCode": 301 }
+  ],
   "responseOverrides": {
     "404": {
-      "rewrite": "/index.html",
-      "statusCode": 200
+      "rewrite": "/404.html",
+      "statusCode": 404
     }
   },
   "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'self'; upgrade-insecure-requests",
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
-    "Referrer-Policy": "strict-origin-when-cross-origin"
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
   },
   "mimeTypes": {
     ".svg": "image/svg+xml"

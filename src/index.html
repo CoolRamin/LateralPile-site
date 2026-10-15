@@ -3,850 +3,325 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>RPile — Lateral Pile &amp; Caisson Analysis Software</title>
-<meta name="description" content="RPile is a Windows desktop tool for coupled axial + lateral pile analysis: a Naik-Peyrot p-y solver, ACI 318-25 Mander-confined section design, and independent soil-mobilization and equilibrium checks. Free public beta." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="RPile — Lateral Pile & Caisson Analysis Software" />
-<meta property="og:description" content="Coupled axial + lateral pile analysis, ACI 318-25 section design, and independent geotechnical + equilibrium audits. Free Windows public beta." />
-<meta property="og:url" content="https://www.ramisoftsolutions.com/" />
+<title>RamisoftSolutions — Specialized Structural Engineering Software</title>
+<meta name="description" content="RamisoftSolutions develops specialized structural engineering software for Windows: FoundaTrix Studio for the analysis and design of rigid foundations, and PileAxis for the lateral and axial analysis of piles and drilled shafts." />
+<meta name="color-scheme" content="light dark" />
 <meta name="theme-color" content="#0a0f1c" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="styles.css" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="RamisoftSolutions" />
+<meta property="og:url" content="https://www.ramisoftsolutions.com/" />
+<meta property="og:title" content="RamisoftSolutions — specialized structural engineering software" />
+<meta property="og:description" content="FoundaTrix Studio for rigid foundations and PileAxis for piles and drilled shafts: comprehensive, accurate and complete engineering software for Windows." />
+<link rel="canonical" href="https://www.ramisoftsolutions.com/" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="/styles.css" />
+<script src="/site.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RamisoftSolutions",
+  "url": "https://www.ramisoftsolutions.com/",
+  "email": "admin@ramisoftsolutions.com",
+  "description": "Developer of specialized structural engineering software.",
+  "sameAs": ["https://www.linkedin.com/company/ramisoftsolutions/", "https://www.foundatrix.com/", "https://www.pileaxis.com/"]
+}
+</script>
 </head>
 <body>
 
-<a class="visually-hidden" href="#main">Skip to content</a>
-
-<div class="announce-bar">
-  <div class="container announce-bar__inner">
-    <span class="announce-bar__text"><strong>Limited time:</strong> sign in and every Pro-track feature — pushover analysis, branded PDF reports, custom p-y curves, the AI assistant — unlocks free.</span>
-    <a href="#pro-preview">See what's included &rarr;</a>
-  </div>
-</div>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav">
   <div class="container nav__inner">
-    <a class="brand" href="#top">
-      <svg class="brand-mark" viewBox="0 0 32 32" role="img" aria-label="RPile">
-        <defs>
-          <linearGradient id="bmGrad" x1="0" y1="0" x2="32" y2="32">
-            <stop offset="0" stop-color="#2dd4bf" />
-            <stop offset="1" stop-color="#0f766e" />
-          </linearGradient>
-        </defs>
-        <rect width="32" height="32" rx="9" fill="url(#bmGrad)" />
-        <rect x="14" y="5" width="4" height="21" rx="2" fill="#ffffff" />
-        <rect x="6" y="20" width="20" height="2" rx="1" fill="#ffffff" opacity="0.55" />
-        <rect x="6" y="24" width="20" height="2" rx="1" fill="#ffffff" opacity="0.35" />
-      </svg>
-      <span>RPile</span>
-      <span class="badge badge--beta">Public Beta</span>
+    <a class="brand" href="/" aria-label="RamisoftSolutions home">
+      <img class="brand__mark" src="/images/ramisoft-mark.svg" alt="" width="34" height="34" />
+      <span class="brand__name">Ramisoft<span>Solutions</span></span>
     </a>
-    <nav aria-label="Primary">
-      <ul class="nav__links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#specs">Specs</a></li>
-        <li><a href="#ai-assistant">AI Assistant</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#pro-preview">Pro Preview</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#support">Support</a></li>
-      </ul>
-    </nav>
-    <div class="nav__actions">
-      <a class="btn btn--ghost btn--sm" href="https://github.com/CoolRamin/LateralPile-site" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn--primary btn--sm" href="https://stglatpileclick.blob.core.windows.net/$web/Publish.html" target="_blank" rel="noopener">Download</a>
+    <div class="nav__menu" id="site-menu">
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/#approach">Our approach</a></li>
+          <li><a href="/#ideas">Share an idea</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <a class="icon-btn" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamisoftSolutions on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a class="btn btn--primary btn--sm" href="/#products">Our software</a>
+      </div>
     </div>
+    <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero" id="top">
+  <!-- ===================== Hero ===================== -->
+  <section class="hero on-dark" aria-labelledby="hero-title">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="eyebrow">Free public beta &middot; Windows desktop</p>
-        <h1>Lateral pile analysis, done to a plan-check standard.</h1>
+        <p class="eyebrow">Specialized structural engineering software</p>
+        <h1 id="hero-title">Engineering software that goes <span class="grad">all the way to the answer.</span></h1>
         <p class="lead">
-          Coupled axial + lateral response for drilled piers and caissons in layered soil —
-          a Naik-Peyrot p-y solver, ACI&nbsp;318-25 Mander-confined section design, and
-          independent geotechnical and global-equilibrium audits, in one desktop tool.
+          RamisoftSolutions is dedicated to one thing: specialized software for structural engineers. Each program takes
+          one engineering problem and solves it completely, from the loads to the last check, with the method and the
+          provision behind every number in plain view.
         </p>
         <div class="cta-row">
-          <a class="btn btn--primary" href="https://stglatpileclick.blob.core.windows.net/$web/Publish.html" target="_blank" rel="noopener">
-            Download Free Beta
-          </a>
-          <a class="btn btn--secondary" href="https://github.com/CoolRamin/LateralPile-site/issues" target="_blank" rel="noopener">
-            Report a Bug / Request a Feature
-          </a>
+          <a class="btn btn--primary btn--lg" href="#products">Explore our software</a>
+          <a class="btn btn--secondary btn--lg" href="#ideas">Share an idea</a>
         </div>
-        <p class="hero__note"><strong>Windows 10/11 (64-bit)</strong> &middot; no account required to try it &middot; auto-updates via ClickOnce</p>
+        <ul class="hero__assurances" aria-label="What our programs share">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free to start</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Works offline</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>One account for both</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Windows 10 &amp; 11</li>
+        </ul>
       </div>
-
-      <div class="hero__visual">
-        <svg viewBox="0 0 520 460" role="img" aria-label="Illustration of a laterally loaded pile in layered soil, showing the deflected shape, head load, and discretization nodes used by the solver">
-          <defs>
-            <pattern id="groundHatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1" />
-            </pattern>
-            <marker id="arrowHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="#2dd4bf" />
-            </marker>
-          </defs>
-
-          <rect x="10" y="10" width="500" height="440" rx="24" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.09)" />
-
-          <!-- soil strata -->
-          <rect x="60" y="110" width="400" height="90" fill="#2dd4bf" opacity="0.08" />
-          <rect x="60" y="200" width="400" height="90" fill="#2dd4bf" opacity="0.14" />
-          <rect x="60" y="290" width="400" height="90" fill="#2dd4bf" opacity="0.2" />
-          <line x1="60" y1="200" x2="460" y2="200" stroke="rgba(148,163,184,0.25)" stroke-dasharray="3 3" />
-          <line x1="60" y1="290" x2="460" y2="290" stroke="rgba(148,163,184,0.25)" stroke-dasharray="3 3" />
-
-          <!-- ground surface -->
-          <rect x="60" y="100" width="400" height="10" fill="url(#groundHatch)" />
-          <line x1="60" y1="100" x2="460" y2="100" stroke="#94a3b8" stroke-width="1.5" />
-
-          <!-- p-y soil springs -->
-          <line x1="78" y1="150" x2="222" y2="150" stroke="#2dd4bf" stroke-width="1.3" opacity="0.65" marker-end="url(#arrowHead)" />
-          <line x1="78" y1="240" x2="222" y2="240" stroke="#2dd4bf" stroke-width="1.3" opacity="0.5" marker-end="url(#arrowHead)" />
-          <line x1="78" y1="330" x2="222" y2="330" stroke="#2dd4bf" stroke-width="1.3" opacity="0.35" marker-end="url(#arrowHead)" />
-          <text x="78" y="140" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="12">p(y)</text>
-
-          <!-- deflected shape -->
-          <path d="M250,75 C300,135 300,215 267,300 C258,330 254,358 251,380" fill="none" stroke="#5eead4" stroke-width="2" stroke-dasharray="5 4" />
-
-          <!-- pile shaft -->
-          <rect x="233" y="70" width="34" height="315" rx="8" fill="#16213a" stroke="#2dd4bf" stroke-width="1.5" />
-
-          <!-- FD discretization nodes -->
-          <circle cx="250" cy="110" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="150" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="190" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="230" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="270" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="310" r="3" fill="#2dd4bf" />
-          <circle cx="250" cy="350" r="3" fill="#2dd4bf" />
-
-          <!-- head load H0 -->
-          <line x1="185" y1="68" x2="228" y2="68" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrowHead)" />
-          <text x="163" y="58" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="14">H&#8320;</text>
-
-          <!-- head moment M0 -->
-          <path d="M198,44 A16,16 0 1 1 197,40" fill="none" stroke="#2dd4bf" stroke-width="1.8" marker-end="url(#arrowHead)" />
-          <text x="196" y="28" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="14">M&#8320;</text>
-        </svg>
+      <div class="hero__art hero__marks">
+        <a href="https://www.foundatrix.com/" target="_blank" rel="noopener" aria-label="FoundaTrix Studio's website">
+          <img src="/images/foundatrix-mark.svg" width="200" height="200" alt="The FoundaTrix Studio mark: a footing and its pedestal under a load, on the analysis grid." />
+        </a>
+        <a href="https://www.pileaxis.com/" target="_blank" rel="noopener" aria-label="PileAxis's website">
+          <img src="/images/pileaxis-mark.svg" width="200" height="200" alt="The PileAxis mark: a drilled shaft under its cap with a lateral load, going down into the ground." />
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="practice" class="trust-strip">
-    <div class="container trust-strip__inner">
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 15a9 9 0 0 1 18 0" />
-            <path d="M2 15h20" />
-            <path d="M12 15V8" />
-          </svg>
-        </div>
-        <div>
-          <h3>Built by a practicing engineer</h3>
-          <p>Designed and maintained by an engineer who runs it on real transmission, refinery, and drilled-shaft foundation work — not a classroom exercise.</p>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 21V10l8-6 8 6v11" />
-            <path d="M9 21v-6h6v6" />
-          </svg>
-        </div>
-        <div>
-          <h3>Built for real geometries</h3>
-          <p>Exercised against messy multi-layer soil profiles and governing load combinations from live projects, not idealized textbook cases.</p>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="6" y="4" width="12" height="17" rx="2" />
-            <path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" />
-            <path d="M9 12.5l2 2 4-4.5" />
-          </svg>
-        </div>
-        <div>
-          <h3>Built for the plan check</h3>
-          <p>Designed from day one to produce numbers you can defend to a plan checker, not just a rough back-of-envelope estimate.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="features">
+  <!-- ===================== Products ===================== -->
+  <section id="products" aria-labelledby="products-title">
     <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">What it does</p>
-        <h2>Six checks, one converged solution.</h2>
-        <p>Every load case is solved once and screened from every angle — structural, geotechnical, and numerical.</p>
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Our software</p>
+        <h2 id="products-title">Two programs, one family.</h2>
+        <p>Each has its own website with everything about it: what it computes, the standards it follows, how to get it and how to reach us about it.</p>
       </div>
 
-      <div class="feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 15c1.8-6 3.4-9 5-9s2.6 9 4.4 9 2.6-9 4.4-9 2.6 6 4.2 6" />
-            </svg>
-          </div>
-          <h3>Coupled axial + lateral solver</h3>
-          <p>A finite-difference Naik-Peyrot p-y solver with Newton-Raphson iteration and Armijo line search, coupled to an axial load-transfer solve for every load case.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <circle cx="12" cy="12" r="8.3" />
-              <circle cx="12" cy="12" r="8.3" stroke-dasharray="0.1 4.35" stroke-linecap="round" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </div>
-          <h3>ACI 318-25 section design</h3>
-          <p>A Mander-confined fiber section drives a full P-M interaction and shear check against ACI&nbsp;318-25, per node, per load case.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-              <path d="M4 17a8 8 0 0 1 16 0" />
-              <path d="M12 17l4-5" />
-              <circle cx="12" cy="17" r="1.1" fill="currentColor" stroke="none" />
-            </svg>
-          </div>
-          <h3>Soil-side mobilization checks</h3>
-          <p>Lateral p-y springs, shaft skin friction, and tip bearing are each screened against their ultimate capacity — independent of the structural demand-capacity ratio.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3v14" />
-              <path d="M5 7h14" />
-              <path d="M5 7l-2.6 5.2a2.6 2.6 0 0 0 5.2 0z" />
-              <path d="M19 7l-2.6 5.2a2.6 2.6 0 0 0 5.2 0z" />
-              <path d="M9 21h6" />
-            </svg>
-          </div>
-          <h3>Global equilibrium verification</h3>
-          <p>Every converged solution is re-integrated and checked for force and moment closure — catching sign errors or discretization bugs a converged residual alone can't reveal.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3c3.2 3.6 5.5 6.8 5.5 9.8a5.5 5.5 0 1 1-11 0C6.5 9.8 8.8 6.6 12 3z" />
-              <path d="M8 14.5h8" stroke-dasharray="1.6 1.6" />
-            </svg>
-          </div>
-          <h3>Groundwater &amp; effective stress</h3>
-          <p>An optional water-table model automatically derives buoyant unit weights and effective stress, so submerged sites don't require manual bookkeeping.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
-              <path d="M12 3l8 4-8 4-8-4 8-4z" />
-              <path d="M4 12l8 4 8-4" />
-              <path d="M4 16l8 4 8-4" />
-            </svg>
-          </div>
-          <h3>Service &amp; LRFD load routing</h3>
-          <p>Run every combination in one pass — structural checks route to strength cases and soil/deflection checks route to service cases automatically, then the governing case is reported for each.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="specs">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">Under the hood</p>
-        <h2>Technical specifications.</h2>
-        <p>The methods, references, and data workflows behind every run — so you can verify the tool's reasoning, not just trust it.</p>
-      </div>
-
-      <div class="spec-grid">
-
-        <div class="spec-card">
-          <div class="support-kicker">Numerical method</div>
-          <h3>Layered p-y solver</h3>
-          <ul class="tier-list">
-            <li>Coupled axial + lateral formulation, Naik &amp; Peyrot<sup class="spec-ref">1</sup></li>
-            <li>Finite-difference discretization, banded LU factorization (LAPACK DGBSV-style — O(n), not O(n&sup3;))</li>
-            <li>Uniform or Graded (non-uniform) meshing — element spacing auto-sized to the head condition, refined near the surface where curvature is sharpest</li>
-            <li>Newton-Raphson iteration with Armijo backtracking line search for robust convergence</li>
-            <li>Outer variable-EI loop updates section stiffness from the Mander moment-curvature response each pass</li>
-          </ul>
-        </div>
-
-        <div class="spec-card spec-card--stat">
-          <div class="support-kicker">Performance</div>
-          <h3>8.5&nbsp;s &rarr; 15&ndash;25&nbsp;ms warm</h3>
-          <p class="spec-stat-detail">A typical multi-case analysis, after a pass dedicated entirely to solver throughput &mdash; same solver, same results, just faster.</p>
-          <ul class="tier-list">
-            <li>Every enabled load combination solves concurrently, each to its own convergence</li>
-            <li>Each worker gets an independently cloned pile and solver workspace — no shared mutable state</li>
-            <li>Degree of parallelism is user-configurable; a serial mode is available for step-through debugging</li>
-            <li>Unlimited load combinations per project</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Soil models</div>
-          <h3>Eight built-in p-y criteria</h3>
-          <ul class="tier-list">
-            <li>Soft clay — Matlock<sup class="spec-ref">2</sup></li>
-            <li>Stiff clay below the water table — Reese, Cox &amp; Koop<sup class="spec-ref">3</sup></li>
-            <li>Stiff clay above the water table (dry) — Welch &amp; Reese<sup class="spec-ref">4</sup></li>
-            <li>Sand — Reese, Cox &amp; Koop<sup class="spec-ref">5</sup>, full piecewise curve for the most accurate near-ultimate behavior</li>
-            <li>API sand (offshore) — API RP&nbsp;2A-WSD<sup class="spec-ref">6</sup></li>
-            <li>Weak rock — Reese<sup class="spec-ref">7</sup></li>
-            <li>Strong rock (vuggy limestone) — FHWA-NHI-10-016<sup class="spec-ref">11</sup></li>
-            <li>Linear elastic (user-defined modulus)</li>
-            <li>Georgiadis<sup class="spec-ref">8</sup> equivalent-depth correction applied across layered profiles</li>
-            <li>Optional groundwater / effective-stress overlay — automatic buoyant unit weights below the water table</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Axial capacity</div>
-          <h3>FHWA-NHI-10-016 skin friction &amp; end bearing</h3>
-          <ul class="tier-list">
-            <li>Clay, sand, and rock skin-friction and end-bearing formulas aligned to FHWA-NHI-10-016<sup class="spec-ref">11</sup></li>
-            <li>N60-based sand capacity — enter SPT blow count per layer for beta-method skin friction and a correlated end-bearing capacity</li>
-            <li>Per-layer rock side-resistance method — Normal, degraded/caving socket, or Colorado DOT claystone, chosen per layer</li>
-            <li>Per-geomaterial ASD/LRFD resistance factors — distinct values by soil type and by compression vs. uplift, with a one-click FHWA preset</li>
-            <li>Solved from the same coupled axial + lateral run — no separate hand calc to reconcile</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Structural design</div>
-          <h3>ACI 318-25 section check</h3>
-          <ul class="tier-list">
-            <li>Mander-confined fiber section, per ACI CODE-318-25<sup class="spec-ref">10</sup></li>
-            <li>Full P-M interaction diagram and shear check, per node, per load case</li>
-            <li>Confinement model per Mander, Priestley &amp; Park<sup class="spec-ref">9</sup> drives the variable-EI feedback loop</li>
-            <li>Reinforcement input by bar count/size or by target steel ratio (&rho;<sub>g</sub>%) — your choice</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Stability &amp; equilibrium</div>
-          <h3>Independent verification audit</h3>
-          <ul class="tier-list">
-            <li>A separate post-solve check re-integrates every converged solution — it does not reuse solver internals, so a sign or discretization bug can't hide from it</li>
-            <li>Confirms lateral force balance, lateral moment balance (including the P-Delta secondary moment), and axial force balance</li>
-            <li>Flags physical-sanity issues: numerical blow-up, deflection exceeding the pile diameter, or degenerate section stiffness</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Load cases</div>
-          <h3>Service &amp; LRFD routing</h3>
-          <ul class="tier-list">
-            <li>Service (unfactored) vs. LRFD/strength combinations are tagged per case</li>
-            <li>Section checks route to strength cases; soil-mobilization and deflection checks route to service cases — automatically</li>
-            <li>Per-case dead-load factor keeps self-weight consistent with the combination (e.g. 0.9D for an uplift check)</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Data workflow</div>
-          <h3>Import, export, and reporting</h3>
-          <ul class="tier-list">
-            <li>Native JSON project files (<code>.lpcj</code>)</li>
-            <li>Excel-compatible copy/paste for soil layers and load cases — bulk-edit in Excel, paste straight back in, no file conversion needed</li>
-            <li>Right-click any chart to copy it as an image or copy its underlying data Excel-ready — standardized across every plot in the app</li>
-            <li>A full numbered governing-design report, ready to paste into a submittal</li>
-          </ul>
-        </div>
-
-        <div class="spec-card">
-          <div class="support-kicker">Cloud sync</div>
-          <h3>Optional, never required</h3>
-          <ul class="tier-list">
-            <li>Local <code>.lpcj</code> files are the default — the tool works fully offline, forever, without an account</li>
-            <li>Sign in once (optional) to save projects to the cloud and pick them up on another machine</li>
-            <li>Nothing about the free tier depends on signing in</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <ol class="spec-refs">
-        <li>Naik, T.R. &amp; Peyrot, A.H. (1976). "Analysis and Design of Laterally Loaded Piles and Caissons in a Layered Soil System," ASCE National Structural Engineering Conference.</li>
-        <li>Matlock, H. (1970). "Correlations for design of laterally loaded piles in soft clay," 2nd Offshore Technology Conference, Paper 1204.</li>
-        <li>Reese, L.C., Cox, W.R. &amp; Koop, F.D. (1975). "Field testing and analysis of laterally loaded piles in stiff clay," 7th OTC, Paper 2312.</li>
-        <li>Welch, R.C. &amp; Reese, L.C. (1972). "Laterally Loaded Behavior of Drilled Shafts," Research Report 89-10, Center for Highway Research, University of Texas at Austin.</li>
-        <li>Reese, L.C., Cox, W.R. &amp; Koop, F.D. (1974). "Analysis of laterally loaded piles in sand," 6th OTC, Paper 2080.</li>
-        <li>API (2010). <em>RP 2A-WSD, Recommended Practice for Planning, Designing and Constructing Fixed Offshore Platforms</em>, 22nd Ed., American Petroleum Institute.</li>
-        <li>Reese, L.C. (1997). "Analysis of laterally loaded piles in weak rock," <em>J. Geotech. &amp; Geoenv. Engrg.</em>, ASCE, 123(11), pp. 1010-1017.</li>
-        <li>Georgiadis, M. (1983). "Development of p-y curves for layered soils," Proc. Geotech. Practice in Offshore Engineering, ASCE.</li>
-        <li>Mander, J.B., Priestley, M.J.N. &amp; Park, R. (1988). "Theoretical stress-strain model for confined concrete," <em>J. Struct. Engrg.</em>, ASCE, 114(8), pp. 1804-1826.</li>
-        <li>ACI Committee 318 (2025). <em>ACI CODE-318-25 Building Code Requirements for Structural Concrete and Commentary</em>, American Concrete Institute.</li>
-        <li>FHWA (2010). <em>Drilled Shafts: Construction Procedures and LRFD Design Methods</em>, FHWA-NHI-10-016 (Brown, Turner &amp; Castelli).</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="showcase" class="alt-band">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">See it in action</p>
-        <h2>From load case to governing check.</h2>
-        <p>A sample of the plots and checks generated for every run.</p>
-        <p class="showcase-note"><em>Illustrative previews below — real product screenshots are coming as the site fills in.</em></p>
-      </div>
-
-      <div class="showcase-grid">
-
-        <figure class="shot-card">
-          <div class="shot-frame">
-            <div class="shot-frame__bar">
-              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
-            </div>
-            <div class="shot-frame__body">
-              <svg viewBox="0 0 400 250" role="img" aria-label="Sample shear and moment diagrams plotted against depth">
-                <line x1="70" y1="20" x2="70" y2="230" stroke="#94a3b8" stroke-width="1.2" />
-                <line x1="145" y1="20" x2="145" y2="230" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
-                <path d="M145,20 C205,55 225,95 190,130 C165,155 150,175 158,200 C162,213 150,222 145,228" fill="none" stroke="#14b8a6" stroke-width="2.2" />
-                <path d="M180,20 C160,60 130,95 155,130 C172,153 148,175 140,200 C137,210 142,220 145,228" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 4" />
-                <text x="188" y="34" fill="#14b8a6" font-family="ui-monospace,Menlo,monospace" font-size="13">M(z)</text>
-                <text x="150" y="46" fill="#f59e0b" font-family="ui-monospace,Menlo,monospace" font-size="13">V(z)</text>
-                <text x="55" y="234" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">depth</text>
-              </svg>
+      <div class="products">
+        <article class="product-card reveal" aria-labelledby="foundatrix-title">
+          <div class="product-card__head">
+            <img class="product-card__mark" src="/images/foundatrix-mark.svg" width="72" height="72" alt="" />
+            <div>
+              <h3 id="foundatrix-title">FoundaTrix Studio</h3>
+              <p class="product-card__tagline">Analysis and design of rigid foundations</p>
             </div>
           </div>
-          <figcaption>
-            <h3>Shear &amp; moment diagrams</h3>
-            <p>Full-length V(z) and M(z) profiles for every load case, plotted alongside the deflected shape.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot-card">
-          <div class="shot-frame">
-            <div class="shot-frame__bar">
-              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
-            </div>
-            <div class="shot-frame__body">
-              <svg viewBox="0 0 400 250" role="img" aria-label="Sample P-M interaction diagram with per-node demand-capacity points">
-                <path d="M200,25 C295,55 335,140 298,188 C258,236 142,236 102,188 C65,140 105,55 200,25 Z" fill="#14b8a6" opacity="0.08" stroke="#14b8a6" stroke-width="1.6" />
-                <line x1="200" y1="18" x2="200" y2="240" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
-                <line x1="55" y1="135" x2="345" y2="135" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
-                <circle cx="190" cy="110" r="4.5" fill="#22c55e" />
-                <circle cx="228" cy="150" r="4.5" fill="#22c55e" />
-                <circle cx="168" cy="175" r="4.5" fill="#22c55e" />
-                <circle cx="268" cy="168" r="4.5" fill="#f59e0b" />
-                <circle cx="300" cy="182" r="4.5" fill="#ef4444" />
-                <text x="204" y="30" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">P</text>
-                <text x="330" y="131" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="11">M</text>
-              </svg>
-            </div>
-          </div>
-          <figcaption>
-            <h3>Per-section DCR checking</h3>
-            <p>Every node's demand point is plotted against the P-M envelope — green, amber, or red at a glance.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot-card">
-          <div class="shot-frame">
-            <div class="shot-frame__bar">
-              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
-            </div>
-            <div class="shot-frame__body">
-              <svg viewBox="0 0 400 250" role="img" aria-label="Sample P-Delta illustration showing head offset and secondary moment">
-                <line x1="200" y1="15" x2="200" y2="230" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" />
-                <path d="M215,20 C225,70 232,120 218,170 C210,198 204,215 202,228" fill="none" stroke="#5eead4" stroke-width="2.2" />
-                <rect x="196" y="14" width="12" height="8" rx="2" fill="#16213a" stroke="#14b8a6" />
-                <line x1="200" y1="30" x2="215" y2="24" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="2 2" />
-                <text x="218" y="20" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="13">&#916;</text>
-                <line x1="215" y1="8" x2="215" y2="20" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowHead2)" />
-                <defs>
-                  <marker id="arrowHead2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                    <path d="M0,0 L10,5 L0,10 z" fill="#14b8a6" />
-                  </marker>
-                </defs>
-                <text x="222" y="10" fill="#e2e8f0" font-family="ui-monospace,Menlo,monospace" font-size="13">P</text>
-                <path d="M232,120 A18,18 0 1 1 231,116" fill="none" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrowHead2)" />
-                <text x="236" y="150" fill="#f59e0b" font-family="ui-monospace,Menlo,monospace" font-size="13">P&middot;&#916;</text>
-              </svg>
-            </div>
-          </div>
-          <figcaption>
-            <h3>P-Delta analysis</h3>
-            <p>Head-to-tip offset under axial load is tracked as a depth-varying secondary moment, not a single scalar fudge factor.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot-card">
-          <div class="shot-frame">
-            <div class="shot-frame__bar">
-              <span class="shot-dot shot-dot--r"></span><span class="shot-dot shot-dot--y"></span><span class="shot-dot shot-dot--g"></span>
-            </div>
-            <div class="shot-frame__body">
-              <svg viewBox="0 0 400 250" role="img" aria-label="Sample layered soil profile sketch with a water table overlay">
-                <rect x="140" y="20" width="140" height="60" fill="#C8E6A0" />
-                <rect x="140" y="80" width="140" height="55" fill="#F2D58A" />
-                <rect x="140" y="135" width="140" height="50" fill="#8FC17A" />
-                <rect x="140" y="185" width="140" height="45" fill="#C9A98C" />
-                <line x1="140" y1="80" x2="280" y2="80" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
-                <line x1="140" y1="135" x2="280" y2="135" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
-                <line x1="140" y1="185" x2="280" y2="185" stroke="rgba(15,23,42,0.25)" stroke-dasharray="2 2" />
-                <line x1="205" y1="10" x2="205" y2="230" stroke="#14b8a6" stroke-width="2" opacity="0.85" />
-                <line x1="130" y1="105" x2="290" y2="105" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="4 3" />
-                <path d="M130,105 l6,-6 l6,6 z" fill="#38bdf8" />
-                <text x="292" y="108" fill="#0369a1" font-family="ui-monospace,Menlo,monospace" font-size="11">WT</text>
-                <text x="92" y="24" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">0 ft</text>
-                <text x="92" y="139" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">12 ft</text>
-                <text x="92" y="234" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10">22 ft</text>
-              </svg>
-            </div>
-          </div>
-          <figcaption>
-            <h3>Soil layer modeling</h3>
-            <p>A to-scale, color-coded strata sketch with a live water-table overlay — the same profile the solver sees.</p>
-          </figcaption>
-        </figure>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="ai-assistant">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">Pro preview &middot; free to try</p>
-        <h2>An AI assistant that's grounded in your actual project.</h2>
-        <p>Not a generic chatbot bolted on the side — it reads your live pile/soil setup, your results, and your pushover output, and answers from them.</p>
-      </div>
-
-      <div class="feature-grid ai-feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6z" />
-              <path d="M14 3v6h6" />
-              <path d="M9 14.5l2 2 4-4.5" />
-            </svg>
-          </div>
-          <h3>Grounded in your project</h3>
-          <p>Reads your live pile, soil, and section setup, the governing case, DCRs, soil-mobilization ratios, and pushover output directly — it doesn't guess at numbers it can't point to.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9" />
-              <path d="M8.3 12.5l2.3 2.3 4.4-4.8" />
-            </svg>
-          </div>
-          <h3>Fact-checked, not just fluent</h3>
-          <p>Every number in a reply is checked against the tool output it actually came from. Anything it can't trace back to your project is flagged, not silently trusted.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-            </svg>
-          </div>
-          <h3>Answers you can verify</h3>
-          <p>Methodology and "how do I&hellip;" questions are answered by searching the same User's Manual you can open yourself — so you can check the source, not just take its word for it.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 11.5a8.38 8.38 0 0 1-3.8 7 8.5 8.5 0 0 1-8.9.5L3 21l1.9-5.8a8.38 8.38 0 0 1-.9-3.7 8.5 8.5 0 0 1 5-7.7 8.48 8.48 0 0 1 3.3-.8h.5a8.48 8.48 0 0 1 8 8v.5z" />
-            </svg>
-          </div>
-          <h3>A real chat, not a form</h3>
-          <p>A native desktop chat window that streams replies token-by-token with live Markdown formatting and status updates while it works — open it alongside the main window, not instead of it.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="3" width="12" height="17" rx="1.5" />
-              <line x1="7" y1="7" x2="13" y2="7" />
-              <line x1="7" y1="10.5" x2="13" y2="10.5" />
-              <circle cx="17" cy="17" r="3.2" />
-              <line x1="19.3" y1="19.3" x2="21.5" y2="21.5" />
-            </svg>
-          </div>
-          <h3>Grounded in published literature</h3>
-          <p>Search the actual papers your analysis methods are built on — Naik &amp; Peyrot, Matlock, Reese, Mander, and more — and click straight through to the cited page of the source.</p>
-        </div>
-
-        <div class="feature-card feature-card--wide">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z" />
-              <circle cx="12" cy="9" r="2.5" />
-            </svg>
-          </div>
-          <h3>Finds projects across your whole cloud library</h3>
-          <p>Ask it to pull up every project within a radius of a site, filter by pile diameter or other properties, or search your Scope-of-Work text by meaning, not just keyword — all from the same chat window.</p>
-        </div>
-
-      </div>
-
-      <div class="callout callout--privacy" role="note">
-        <svg class="callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="5" y="11" width="14" height="9" rx="2" />
-          <path d="M8 11V7a4 4 0 0 1 8 0v4" />
-        </svg>
-        <div>
-          <h3>Your data stays yours.</h3>
-          <p>
-            The assistant answers only from your own project — never from anyone else's data.
-            Anything sent to run it is treated as confidential and used solely to power that
-            session. We never share, sell, or use it to train models without your explicit
-            consent.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <p class="eyebrow" style="color:var(--accent-strong)">Pricing</p>
-        <h2>Free for practicing engineers. Forever.</h2>
-        <p>Not a trial. Not a countdown. The current version of RPile is free to download, free to run, and free to keep — for good.</p>
-      </div>
-
-      <div class="pledge-row">
-        <span class="tag-pill">Coupled axial + lateral solver</span>
-        <span class="tag-pill">ACI 318-25 section design</span>
-        <span class="tag-pill">Soil-mobilization checks</span>
-        <span class="tag-pill">Equilibrium audit</span>
-        <span class="tag-pill">Groundwater modeling</span>
-        <span class="tag-pill">Unlimited projects &amp; load cases</span>
-      </div>
-
-      <div class="pledge-callout">
-        <h3>Try it. Break it. Smoke-test it.</h3>
-        <p>
-          Run your next real project through it — a messy multi-layer profile, an awkward load
-          combination, whatever you'd normally reach for a p-y solver to handle. The more
-          practicing engineers push it against real geometries, the faster it gets better for
-          everyone. Found something it gets wrong? That's exactly what
-          <a href="#support">Report a Bug</a> is for.
-        </p>
-        <a class="btn btn--primary" href="https://stglatpileclick.blob.core.windows.net/$web/Publish.html" target="_blank" rel="noopener">Download Free Beta</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="pro-preview" class="alt-band">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">Limited-time preview</p>
-        <h2>Free stays free. Pro is free to try — for now.</h2>
-        <p>Sign in and every current Pro-track feature unlocks automatically, free, for a limited time. When Pro ships as a paid tier, everything in Free today stays free — forever.</p>
-      </div>
-
-      <div class="tier-grid">
-        <div class="tier-card">
-          <div class="tier-badge tier-badge--free">Available now</div>
-          <h3>Free</h3>
-          <p>Everything a practicing engineer needs to run and defend a lateral pile analysis. No account required.</p>
-          <ul class="tier-list">
-            <li>Coupled axial + lateral solver</li>
-            <li>ACI 318-25 section design</li>
-            <li>Soil-mobilization &amp; equilibrium checks</li>
-            <li>Groundwater / effective-stress modeling</li>
-            <li>Unlimited projects, load cases, and re-runs</li>
-            <li>Client &amp; multi-pile-analysis projects — every pile at a site, in one place</li>
-            <li>Per-pile coordinates on a live map — pick OpenStreetMap or Esri imagery</li>
-            <li>Public soil-model library — browse models shared by other engineers, sorted by distance to your site</li>
-            <li>Cloud project version history — every save is a recoverable version</li>
-            <li>Recycle bin for deleted cloud projects</li>
+          <p>Any rigid foundation, modelled in 3D: spread, combined, strapped and mat foundations of any outline, carrying any number of pedestals, and pile caps on PileAxis piles.</p>
+          <ul>
+            <li>Bearing pressure under every load combination, partial uplift included, with overturning and sliding.</li>
+            <li>Concrete and anchor rods designed to ACI&nbsp;318-19; steel stands and racks to AISC&nbsp;360-22.</li>
+            <li>Wizards for vessels, heat exchangers, substation equipment and pipe supports.</li>
           </ul>
-        </div>
-        <div class="tier-card tier-card--preview">
-          <div class="tier-badge tier-badge--preview">Preview &middot; limited time</div>
-          <h3>Pro Preview</h3>
-          <p>Sign in and every current Pro-track feature is unlocked automatically — free, while the preview lasts.</p>
-          <ul class="tier-list">
-            <li>Pushover (capacity-curve) analysis — ultimate lateral capacity, ductility, and structural-vs-soil failure mode, per load case</li>
-            <li>Branded PDF reports with your firm's logo</li>
-            <li>Custom, user-defined p-y soil curves</li>
-            <li>AI assistant — grounded Q&amp;A over your live project, results, and pushover output</li>
-            <li>Reference document search — ground the AI assistant in the actual published papers behind the methods, with clickable citations</li>
-            <li>Interactive map view — browse your cloud projects and soil-model library by location</li>
-            <li>Site-boundary attachments — a shapefile, KML/KMZ, or one you sketch by hand, right on the map</li>
-            <li>AI-powered cloud project search — radius, property, and semantic search, right from the chat</li>
-            <li>Organizations — shared team projects across your firm, with checkout locking</li>
+          <div class="product-card__actions">
+            <a class="btn btn--primary" href="https://www.foundatrix.com/" target="_blank" rel="noopener">Visit foundatrix.com</a>
+            <a class="btn btn--ghost" href="https://apps.microsoft.com/detail/9PN2N2M02389" target="_blank" rel="noopener">Get it from the Microsoft Store</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" aria-labelledby="pileaxis-title">
+          <div class="product-card__head">
+            <img class="product-card__mark" src="/images/pileaxis-mark.svg" width="72" height="72" alt="" />
+            <div>
+              <h3 id="pileaxis-title">PileAxis</h3>
+              <p class="product-card__tagline">Lateral and axial analysis of piles and drilled shafts</p>
+            </div>
+          </div>
+          <p>A single pile or drilled shaft in layered soil, analysed under combined lateral and axial load and checked from the soil to the section.</p>
+          <ul>
+            <li>The p-y and t-z response solved together for every load combination.</li>
+            <li>The section checked to ACI&nbsp;318-25 on a confined-concrete fibre model, with independent soil and equilibrium audits.</li>
+            <li>Drilled shafts, and as a Pro feature precast pretensioned piles and steel H-piles.</li>
           </ul>
+          <div class="product-card__actions">
+            <a class="btn btn--primary" href="https://www.pileaxis.com/" target="_blank" rel="noopener">Visit pileaxis.com</a>
+            <span class="badge badge--soon">Coming soon to the Microsoft Store</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="together reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+        <span><strong>They work together.</strong> One account signs in to both, and they share one cloud: a project can hold pile and foundation designs side by side, and a FoundaTrix Studio pile cap stands on pile models taken from PileAxis designs in the same project.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== Approach ===================== -->
+  <section id="approach" class="alt-band" aria-labelledby="approach-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our approach</p>
+        <h2 id="approach-title">Comprehensive, accurate and complete.</h2>
+        <p>Specialized software earns its place by doing the whole job well. These are the commitments every RamisoftSolutions program is built to.</p>
+      </div>
+      <div class="card-grid mt-xl">
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+          <h3>Comprehensive</h3>
+          <p>The whole design problem in one program: the loads, the analysis, every strength and serviceability check, and the report, without hand-offs to spreadsheets in between.</p>
         </div>
-        <div class="tier-card tier-card--pro">
-          <div class="tier-badge tier-badge--pro">Coming soon &middot; in testing</div>
-          <h3>Pro</h3>
-          <p>Once the preview ends, Pro becomes a paid tier for teams and firms — pricing and timeline still TBD. Already built and in active testing:</p>
-          <ul class="tier-list">
-            <li>Seismic deep-foundation detailing — jurisdiction-aware reinforcement requirements, AI-researched from official sources and engineer-confirmed</li>
-            <li>Parametric study — automated sensitivity sweeps to find the optimal pile geometry</li>
-            <li>Probabilistic / Monte Carlo analysis — fragility curves and reliability statistics</li>
-            <li>AI-assisted what-if investigations — the assistant proposes a fix and solver-verifies it before telling you</li>
-          </ul>
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
+          <h3>Engineering accuracy</h3>
+          <p>Methods implemented from the standards themselves and held, by automated tests, to closed-form solutions and to the worked examples published with them.</p>
+        </div>
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/></svg></div>
+          <h3>Completeness</h3>
+          <p>Every check reported, passing or failing, with the governing case, the equation and the provision it comes from. Nothing is hidden behind a single verdict.</p>
+        </div>
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Checked from every side</h3>
+          <p>Results are audited independently of the solution that produced them: equilibrium closed, the soil's mobilisation measured, the assumptions stated where they apply.</p>
+        </div>
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></div>
+          <h3>Free to start</h3>
+          <p>The core analysis and design in each program is free, needs no account and works offline. Sign in only for the cloud and the Pro capabilities.</p>
+        </div>
+        <div class="card card--hover reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+          <h3>Your work stays yours</h3>
+          <p>No advertising, no analytics, no telemetry. Projects on your computer never leave it unless you save them to the cloud.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="requirements" class="requirements">
+  <!-- ===================== Standards ===================== -->
+  <section class="standards" aria-labelledby="standards-title">
     <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">Before you install</p>
-        <h2>System requirements</h2>
-        <p>RPile ships as a signed ClickOnce install with automatic updates.</p>
-      </div>
-      <div class="req-grid">
-        <div class="req-item">
-          <div class="req-label">Operating system</div>
-          <div class="req-value">Windows 10 / 11</div>
-          <div class="req-detail">64-bit only</div>
-        </div>
-        <div class="req-item">
-          <div class="req-label">Runtime</div>
-          <div class="req-value">.NET 10 Desktop</div>
-          <div class="req-detail">Installed automatically if missing</div>
-        </div>
-        <div class="req-item">
-          <div class="req-label">Disk space</div>
-          <div class="req-value">~350 MB</div>
-          <div class="req-detail">Plus runtime, if not already installed</div>
-        </div>
-        <div class="req-item">
-          <div class="req-label">Network</div>
-          <div class="req-value">Required for install/updates</div>
-          <div class="req-detail">Not required to run analyses afterward</div>
-        </div>
-      </div>
+      <p class="standards__label" id="standards-title">Built on the documents engineers sign against</p>
+      <ul class="standards__list">
+        <li class="chip"><strong>ACI</strong> 318-19 &middot; 318-25</li>
+        <li class="chip"><strong>ASCE</strong> 7-22</li>
+        <li class="chip"><strong>AISC</strong> 360-22</li>
+        <li class="chip"><strong>FHWA</strong> GEC-12</li>
+        <li class="chip"><strong>PCI</strong> RP-156-25</li>
+        <li class="chip"><strong>ASCE</strong> MOP 113</li>
+        <li class="chip"><strong>IEEE</strong> 693 &middot; 605 &middot; 980</li>
+        <li class="chip"><strong>PIP</strong> STC01015</li>
+      </ul>
     </div>
   </section>
 
-  <section id="beta">
+  <!-- ===================== Ideas ===================== -->
+  <section id="ideas" class="alt-band" aria-labelledby="ideas-title">
     <div class="container">
-      <div class="callout" role="note">
-        <svg class="callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 9v4" />
-          <path d="M12 17h.01" />
-          <path d="M10.3 3.9 2.5 18a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
-        </svg>
-        <div>
-          <h3>RPile is in active public beta</h3>
-          <p>
-            It is an engineering aid, not a substitute for engineering judgment. Independently verify all
-            outputs against your project's applicable codes and your own checks before relying on them
-            in a stamped submittal.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="support">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow" style="color:var(--accent-strong)">Feedback loop</p>
-        <h2>Found a bug? Have an idea?</h2>
-        <p>Two channels are open — pick whichever fits your issue.</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Shape what we build next</p>
+        <h2 id="ideas-title">Your idea could be our next program.</h2>
+        <p>Our programs grow from the problems engineers bring us. Is there a structural engineering task you still do by hand or in a spreadsheet because no software does it properly? A check you wish your tools made, a standard they should follow, a whole new kind of structure? Tell us: we read every suggestion, and the best ideas from practice become the next feature or the next product.</p>
       </div>
       <div class="support-grid">
-        <div class="support-card">
-          <div class="support-kicker">Public</div>
-          <h3>GitHub Issues</h3>
-          <p>
-            Search whether it's already reported, file a bug or feature request with the templates
-            provided, and track the fix. Best for most reports — attach a sanitized <code>.lpcj</code>
-            file if you can.
-          </p>
-          <a class="btn btn--ghost" href="https://github.com/CoolRamin/LateralPile-site/issues" target="_blank" rel="noopener">Open an Issue</a>
+        <div class="support-card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1.1 1.3 1.1 2.2h5c0-.9.5-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg></div>
+          <h3>Propose new software</h3>
+          <p>An engineering problem that deserves a program of its own. Describe the task, who faces it and the standards that govern it.</p>
+          <a class="btn btn--ghost" href="https://github.com/CoolRamin/LateralPile-site/issues/new?template=idea.yml" target="_blank" rel="noopener">Share your idea</a>
         </div>
-        <div class="support-card">
-          <div class="support-kicker">Private</div>
-          <h3>Email</h3>
-          <p>
-            For confidential project data, plan-check questions, or licensing inquiries. The in-app
-            <strong>Help&nbsp;&gt;&nbsp;Report a Bug</strong> command pre-fills this with your case
-            number and project file attached.
-          </p>
-          <a class="btn btn--ghost" href="mailto:admin@ramisoftsolutions.com">Send an Email</a>
+        <div class="support-card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div>
+          <h3>Improve a program</h3>
+          <p>A feature, a check or a standard for one of our programs. Each keeps a public tracker where you can also support ideas others have posted.</p>
+          <div class="product-card__actions">
+            <a class="btn btn--ghost" href="https://github.com/CoolRamin/FoundaTrix-site/issues/new?template=feature_request.yml" target="_blank" rel="noopener">FoundaTrix Studio</a>
+            <a class="btn btn--ghost" href="https://github.com/CoolRamin/PileAxis-site/issues/new?template=feature_request.yml" target="_blank" rel="noopener">PileAxis</a>
+          </div>
         </div>
+        <div class="support-card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <h3>Tell us privately</h3>
+          <p>An idea tied to confidential work, or one you would rather talk through first: write to us directly.</p>
+          <a class="btn btn--ghost" href="mailto:admin@ramisoftsolutions.com?subject=An%20idea%20for%20RamisoftSolutions">admin@ramisoftsolutions.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contact and legal ===================== -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Talk to us.</h2>
+        <p>For help with a program, start on its own website, where its support page and public issue tracker are. For anything else, including licensing, partnerships and press, email <a href="mailto:admin@ramisoftsolutions.com">admin@ramisoftsolutions.com</a>.</p>
+      </div>
+      <div id="legal">
+        <h3 class="visually-hidden">Privacy policies and terms of use</h3>
+        <ul class="legal-list" aria-label="Privacy policies and terms of use">
+          <li>
+            <h3>FoundaTrix Studio</h3>
+            <a href="https://www.foundatrix.com/privacy/" target="_blank" rel="noopener">Privacy policy</a>
+            <a href="https://www.foundatrix.com/terms/" target="_blank" rel="noopener">Terms of use</a>
+          </li>
+          <li>
+            <h3>PileAxis</h3>
+            <a href="https://www.pileaxis.com/privacy/" target="_blank" rel="noopener">Privacy policy</a>
+            <a href="https://www.pileaxis.com/terms/" target="_blank" rel="noopener">Terms of use</a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="container footer__inner">
-    <span>&copy; 2026 RamisoftSolutions &middot; Built and maintained in California, United States</span>
-    <ul class="footer__links">
-      <li><a href="/privacy/">Privacy</a></li>
-      <li><a href="/terms/">Terms</a></li>
-      <li><a href="mailto:admin@ramisoftsolutions.com">admin@ramisoftsolutions.com</a></li>
-      <li>
-        <a class="footer__icon" href="https://github.com/CoolRamin/LateralPile-site" target="_blank" rel="noopener" aria-label="RPile on GitHub" title="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-          </svg>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="RamisoftSolutions home">
+          <img class="brand__mark" src="/images/ramisoft-mark.svg" alt="" width="34" height="34" />
+          <span class="brand__name">Ramisoft<span>Solutions</span></span>
         </a>
-      </li>
-      <li>
-        <a class="footer__icon" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamisoftSolutions on LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-          </svg>
+        <p>Specialized structural engineering software for Windows, built and maintained in California, United States.</p>
+      </div>
+      <div class="footer__col">
+        <h2>Software</h2>
+        <ul>
+          <li><a href="https://www.foundatrix.com/" target="_blank" rel="noopener">FoundaTrix Studio</a></li>
+          <li><a href="https://www.pileaxis.com/" target="_blank" rel="noopener">PileAxis</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/#approach">Our approach</a></li>
+          <li><a href="/#ideas">Share an idea</a></li>
+          <li><a href="mailto:admin@ramisoftsolutions.com">Email us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/#legal">Privacy and terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 RamisoftSolutions &middot; Built and maintained in California, United States</span>
+      <div class="footer__social">
+        <a class="icon-btn" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="RamisoftSolutions on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </footer>
 
 <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Back to top" title="Back to top">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 19V5" />
-    <path d="M6 11l6-6 6 6" />
-  </svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg>
 </button>
-
-<script>
-(function () {
-  var btn = document.getElementById('scrollTopBtn');
-  var onScroll = function () {
-    if (window.scrollY > 480) {
-      btn.classList.add('scroll-top--visible');
-    } else {
-      btn.classList.remove('scroll-top--visible');
-    }
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  btn.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-  onScroll();
-})();
-</script>
 
 </body>
 </html>

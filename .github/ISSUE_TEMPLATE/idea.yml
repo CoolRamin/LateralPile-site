@@ -1,0 +1,39 @@
+name: Idea for new software
+description: An engineering problem you would like RamisoftSolutions to build software for
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing an idea. Search the open issues first: if someone has posted the same idea, a
+        thumbs-up on it tells us it matters to you too. For a feature in an existing program, use that program's
+        own tracker (FoundaTrix Studio or PileAxis, linked from the form chooser).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What engineering task should the software handle?
+      description: The structure or component, the analysis or design it needs, and where today's tools stop short.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it today?
+      description: Hand calculations, spreadsheets, general-purpose software, or not at all.
+    validations:
+      required: false
+  - type: input
+    id: standards
+    attributes:
+      label: Governing standards or references
+      description: For example a code, a design guide, or a worked example the results should match.
+    validations:
+      required: false
+  - type: input
+    id: who
+    attributes:
+      label: Who faces this problem?
+      description: Your field (bridges, buildings, industrial, geotechnical...) and how often the task comes up.
+    validations:
+      required: false

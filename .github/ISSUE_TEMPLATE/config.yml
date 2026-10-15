@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Email support
+  - name: FoundaTrix Studio, a bug or a feature request
+    url: https://github.com/CoolRamin/FoundaTrix-site/issues/new/choose
+    about: FoundaTrix Studio keeps its own public tracker.
+  - name: PileAxis, a bug or a feature request
+    url: https://github.com/CoolRamin/PileAxis-site/issues/new/choose
+    about: PileAxis keeps its own public tracker.
+  - name: Write to us privately
     url: mailto:admin@ramisoftsolutions.com
-    about: For private issues, confidential project data, plan-check questions, or licensing inquiries.
+    about: Confidential work, licensing, partnerships, or an idea you would rather talk through first.
