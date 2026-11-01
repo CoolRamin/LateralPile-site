@@ -1,6 +1,6 @@
 /* FoundaTrix Studio website: hand-written CSS, no framework, no build step.
    The design system is the Ramisoft family's (navy hero, teal accent, white cards), shared with the
-   PileAxis site; the lavender and magenta come from the FoundaTrix mark and mark what is premium. */
+   PileTrix Studio site; the lavender and magenta come from the FoundaTrix mark and mark what is premium. */
 
 :root {
   --bg: #ffffff;
@@ -2741,7 +2741,7 @@ section {
 /* ===================================================================
    RamisoftSolutions additions: the company site's product cards and
    the legal list. Everything above is FoundaTrix Studio's stylesheet,
-   shared with the PileAxis site, so the three read as one family.
+   shared with the PileTrix Studio site, so the three read as one family.
    =================================================================== */
 
 .products {
