@@ -3,9 +3,12 @@ contact_links:
   - name: FoundaTrix Studio, a bug or a feature request
     url: https://github.com/CoolRamin/FoundaTrix-site/issues/new/choose
     about: FoundaTrix Studio keeps its own public tracker.
-  - name: PileAxis, a bug or a feature request
+  - name: PileTrix Studio, a bug or a feature request
     url: https://github.com/CoolRamin/PileAxis-site/issues/new/choose
-    about: PileAxis keeps its own public tracker.
+    about: PileTrix Studio keeps its own public tracker.
+  - name: StruTrix Studio, a bug or a feature request
+    url: https://github.com/CoolRamin/Strutrix-site/issues/new/choose
+    about: StruTrix Studio keeps its own public tracker.
   - name: Write to us privately
     url: mailto:admin@ramisoftsolutions.com
     about: Confidential work, licensing, partnerships, or an idea you would rather talk through first.

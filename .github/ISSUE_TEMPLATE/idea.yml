@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for sharing an idea. Search the open issues first: if someone has posted the same idea, a
         thumbs-up on it tells us it matters to you too. For a feature in an existing program, use that program's
-        own tracker (FoundaTrix Studio or PileAxis, linked from the form chooser).
+        own tracker (FoundaTrix Studio, PileTrix Studio or StruTrix Studio, linked from the form chooser).
   - type: textarea
     id: problem
     attributes:

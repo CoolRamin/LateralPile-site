@@ -4,10 +4,11 @@ This repository holds only the RamisoftSolutions company **website**. It contain
 
 ## Ideas for new software
 
-Open an issue with the "Idea for new software" form. A bug or a feature request for FoundaTrix Studio or PileAxis
-belongs in that program's own tracker:
-[FoundaTrix-site issues](https://github.com/CoolRamin/FoundaTrix-site/issues) and
-[PileAxis-site issues](https://github.com/CoolRamin/PileAxis-site/issues).
+Open an issue with the "Idea for new software" form. A bug or a feature request for FoundaTrix Studio, PileTrix Studio
+or StruTrix Studio belongs in that program's own tracker:
+[FoundaTrix-site issues](https://github.com/CoolRamin/FoundaTrix-site/issues),
+[PileAxis-site issues](https://github.com/CoolRamin/PileAxis-site/issues) (PileTrix Studio) and
+[Strutrix-site issues](https://github.com/CoolRamin/Strutrix-site/issues).
 
 ## Corrections to the site
 
